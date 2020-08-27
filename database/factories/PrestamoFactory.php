@@ -15,8 +15,8 @@
 $factory->define(App\Prestamo::class, function (Faker\Generator $faker) {
 
     return [
-        'book_id'=>rand(1,20),        
-        'user_id'=>rand(1,20),
+        'book_id'=>rand(10,20),        
+        'user_id'=>rand(10,20),
         'devolucion'=>$faker->dateTimeBetween('-10 days','+30days')->format('y-m-d'),     
         'registro_inicio'=>$faker->dateTimeBetween('-30 days','- 5 days')->format('y-m-d'),    
     ];
